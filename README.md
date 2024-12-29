@@ -1,38 +1,20 @@
-# sv
+# Sveltekit PWA Issue
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This repository demonstrates the issue with the fallback html file not being added to the
+service worker manifest.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Reproduction
 
-```bash
-# create a new project in the current directory
-npx sv create
+Just run `pnpm run build` and inspect the service worker code in `build/service-worker.js` to see if `app.html` (or `app` as
+it seem to drop the `.html` at least in some cases) is present.
 
-# create a new project in my-app
-npx sv create my-app
-```
 
-## Developing
+## Observations
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+`.svelte-kit/output/prerendered/pages` only contain the two pre-rendered pages `index.html` and `test.html` but is
+missing the `app.html` (or `fallback.html` as the plugin seem to expect).
 
-```bash
-npm run dev
+Ether file is also missing in `output/client`.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+However, it does exist in `build` after the build is finished.
