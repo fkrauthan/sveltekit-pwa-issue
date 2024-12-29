@@ -134,12 +134,8 @@ function createManifestTransform(base: string, webManifestName?: string, options
 				return e
 			})
 
-		try {
-			manifest.push(await buildManifestEntry('app.html', resolveFs('./build/app.html')))
-		}
-		catch (err) {
-			console.error(err)
-		}
+		// use the version.json file hash as the revision for the app.html file
+		manifest.push(await buildManifestEntry('app.html', resolveFs('.svelte-kit/output/client/_app/version.json')))
 
 		if (!webManifestName)
 			return { manifest }
