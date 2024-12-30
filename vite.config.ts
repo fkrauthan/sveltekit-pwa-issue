@@ -11,6 +11,7 @@ export default defineConfig({
 			filename: "service-worker.ts",
 			kit: {
 				adapterFallback: "app.html",
+				spa: true,
 			},
 			manifest: {
 				id: "/",

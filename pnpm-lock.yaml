@@ -34,8 +34,8 @@ importers:
         specifier: ^0.2.6
         version: 0.2.6
       '@vite-pwa/sveltekit':
-        specifier: ^0.6.6
-        version: 0.6.6(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(@vite-pwa/assets-generator@0.2.6)(vite-plugin-pwa@0.21.1(@vite-pwa/assets-generator@0.2.6)(vite@5.4.11(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0))
+        specifier: https://pkg.pr.new/@vite-pwa/sveltekit@97
+        version: https://pkg.pr.new/@vite-pwa/sveltekit@97(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(@vite-pwa/assets-generator@0.2.6)(vite-plugin-pwa@0.21.1(@vite-pwa/assets-generator@0.2.6)(vite@5.4.11(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0))
       svelte:
         specifier: ^5.0.0
         version: 5.16.0
@@ -910,13 +910,14 @@ packages:
     engines: {node: '>=16.14.0'}
     hasBin: true
 
-  '@vite-pwa/sveltekit@0.6.6':
-    resolution: {integrity: sha512-f08xlcfZyaXgytl05hUtCLih7Vr8zOk/E4eE/UK71M+sEGk+y+vUyTuR8td8KQalpf1Begb8XkxAkV7iUj2a0g==}
+  '@vite-pwa/sveltekit@https://pkg.pr.new/@vite-pwa/sveltekit@97':
+    resolution: {tarball: https://pkg.pr.new/@vite-pwa/sveltekit@97}
+    version: 0.6.6
     engines: {node: '>=16.14 || >=18.13'}
     peerDependencies:
       '@sveltejs/kit': ^1.3.1 || ^2.0.1
       '@vite-pwa/assets-generator': ^0.2.6
-      vite-plugin-pwa: '>=0.20.5 <1'
+      vite-plugin-pwa: '>=0.21.1 <1'
     peerDependenciesMeta:
       '@vite-pwa/assets-generator':
         optional: true
@@ -3069,7 +3070,7 @@ snapshots:
       sharp-ico: 0.1.5
       unconfig: 0.3.13
 
-  '@vite-pwa/sveltekit@0.6.6(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(@vite-pwa/assets-generator@0.2.6)(vite-plugin-pwa@0.21.1(@vite-pwa/assets-generator@0.2.6)(vite@5.4.11(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0))':
+  '@vite-pwa/sveltekit@https://pkg.pr.new/@vite-pwa/sveltekit@97(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(@vite-pwa/assets-generator@0.2.6)(vite-plugin-pwa@0.21.1(@vite-pwa/assets-generator@0.2.6)(vite@5.4.11(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0))':
     dependencies:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.16.0)(vite@5.4.11(terser@5.37.0)))(svelte@5.16.0)(vite@5.4.11(terser@5.37.0))
       kolorist: 1.8.0
